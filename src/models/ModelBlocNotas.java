@@ -69,9 +69,9 @@ public class ModelBlocNotas {
         this.message = message;
     }
     
-    /**
-     * Permite abrir el archivo txt y mostrar su contenido tal cual se encuentra en el archivo
-     */
+/**
+ * Permite abrir cualquier archivo con extension txt,jk7, java o py desde cualquier ruta
+ */
     public void openFile(){
         JFileChooser jfc = new JFileChooser();
         jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -86,7 +86,9 @@ public class ModelBlocNotas {
                 JOptionPane.showMessageDialog(viewBlocnotas, "Error de seleccion");
         }
     }
-    
+    /**
+     * Permite abrir el archivo txt y mostrar su contenido tal cual se encuentra en el archivo
+     */
     public void readFile(){
         try{
         String row;
